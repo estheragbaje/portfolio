@@ -51,8 +51,15 @@ function TopBanner() {
 
         <VStack spacing='8' py='100px'>
           <Text textTransform='uppercase'>Front end developer</Text>
-          <Heading>Hello, I'm Sade</Heading>
-          <Button variant='solid' colorScheme='red' size="lg">
+          <Heading fontSize={['2xl', '2xl', '5xl']}>
+            Hello, I'm Sade Agbaje
+          </Heading>
+          <Button
+            variant='solid'
+            colorScheme='red'
+            size='lg'
+            textTransform='uppercase'
+          >
             Contact Me
           </Button>
         </VStack>

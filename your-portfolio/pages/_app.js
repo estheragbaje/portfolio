@@ -3,6 +3,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 // 1. Import the extendTheme function
 import { extendTheme } from '@chakra-ui/react';
+import TopBanner from '../src/components/TopBanner';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -22,9 +23,10 @@ const theme = extendTheme({ colors });
 function App({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
+      {/* <Component {...pageProps} /> */}
+      <TopBanner />
     </ChakraProvider>
   );
 }
 
-export default MyApp;
+export default App;
